@@ -3,7 +3,7 @@ require 'octokit'
 module GithubProfileHelper
 
   def get_user_repos(user)
-    client = Octokit::Client.new(:client_id => "16ef2aa18fda04b3a544", :client_secret => "aaea7e5c109a6e1c64d6ec9975ad3059043d916f")
+    client = Octokit::Client.new(:client_id => ENV['GITHUB_CLIENT_ID'], :client_secret => ENV['GITHUB_CLIENT_SECRET'])
     client.repos(user)
   end
 
