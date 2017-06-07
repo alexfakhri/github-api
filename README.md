@@ -43,7 +43,7 @@ To run tests:
 $ rspec
 ```
 
-To play a game:
+Start the server:
 ```shell
 $ bundle exec shotgun config.ru
 ```
